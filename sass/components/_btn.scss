@@ -1,0 +1,17 @@
+.btn {
+  @include font(16px, 1.87, 0.06em, 700);
+  position: relative;
+  width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--icon-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
