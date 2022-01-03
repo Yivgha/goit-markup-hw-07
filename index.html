@@ -20,8 +20,8 @@
 
 <body>
     <header class="header">
-        <div class="container header-container">
-            <nav class="header-nav">
+        <div class="container header__container">
+            <nav class="header__nav">
                 <a lang="en" href="./index.html" class="logo"><span class="logo__first-part">Web</span><span
                         class="logo__second-part">Studio</span></a>
                 <ul class="nav">
@@ -52,12 +52,12 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+                <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="visually-hidden">Наши преимущества</h2>
+                <h2 class="visually__hidden">Наши преимущества</h2>
                 <ul class="preferences">
                     <li class="preferences__item">
                         <div class="preferences__block">
@@ -397,7 +397,7 @@
                     <form action="#" class="subscribe__form">
                         <input type="email" name="subscribe" placeholder="E-mail" class="subscribe__input" />
                     </form>
-                    <button type="submit" class="subscribe__btn">Подписаться
+                    <button type="submit" class="subscribe__btn btn">Подписаться
                         <svg class="subscribe__icon">
                             <use href="images/icons.svg#icon-send"></use>
                         </svg>
@@ -408,49 +408,49 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>
-                <svg class="close-icon">
+            <button type="button" class="modal__close" data-modal-close>
+                <svg class="close__icon">
                     <use href="./images/icons.svg#close-icon"></use>
                 </svg>
             </button>
-            <form action="#" name="online-form" autocomplete="off" class="online-form">
-                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form action="#" name="online-form" autocomplete="off" class="online__form">
+                <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div>
-                    <div class="form-name">
-                        <label for="name" class="label">Имя</label>
-                        <input type="text" name="name" id="name" class="form-input" autofocus required>
-                        <svg class="form-icon">
+                    <div class="form__name">
+                        <label for="name" class="form__label">Имя</label>
+                        <input type="text" name="name" id="name" class="form__input" autofocus required>
+                        <svg class="form__icon">
                             <use href="images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
-                    <div class="form-tel">
-                        <label for="tel" class="label">Телефон</label>
-                        <input type="tel" name="tel" id="tel" class="form-input" required>
-                        <svg class="form-icon">
+                    <div class="form__tel">
+                        <label for="tel" class="form__label">Телефон</label>
+                        <input type="tel" name="tel" id="tel" class="form__input" required>
+                        <svg class="form__icon">
                             <use href="images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
-                    <div class="form-mail">
-                        <label for="mail" class="label">Почта</label>
-                        <input type="email" name="mail" id="mail" class="form-input" required>
-                        <svg class="form-icon">
+                    <div class="form__mail">
+                        <label for="mail" class="form__label">Почта</label>
+                        <input type="email" name="mail" id="mail" class="form__input" required>
+                        <svg class="form__icon">
                             <use href="images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                     <div>
-                        <label for="comment" class="label">Комментарий</label>
+                        <label for="comment" class="form__label">Комментарий</label>
                         <textarea name="comment" id="comment" placeholder="Введите текст"
-                            class="form-input comment"></textarea>
+                            class="form__input comment"></textarea>
                     </div>
                 </div>
-                <div class="form-checkbox">
+                <div class="form__checkbox">
                     <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
-                    <span class="policy-icon"></span>
+                    <span class="policy__icon"></span>
                     <label for="checkbox" class="policy">
-                        Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="policy__link">Условия
                             договора</a></label>
                 </div>
-                <button type="submit" class="form-btn">Отправить</button>
+                <button type="submit" class="form__btn btn">Отправить</button>
             </form>
         </div>
     </div>
