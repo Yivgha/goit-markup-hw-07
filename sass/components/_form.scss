@@ -1,16 +1,21 @@
-.online__form {
-  width: 448px;
-  height: 342px;
-}
-
 .form__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  @include font(20px, 1.15, 0.03em, 700);
+
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--header-text-color);
   margin-bottom: 12px;
+}
+
+.form__item {
+  position: relative;
+
+  & + & {
+    margin-bottom: 10px;
+  }
+
+  & + .form__comment {
+    margin-bottom: 10px;
+  }
 }
 
 .form__input {
@@ -19,18 +24,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:last-child {
-    margin-bottom: 20px;
-  }
-
-  &:focus,
-  &:hover {
+  &:focus {
     color: var(--accent-text-color);
     background-color: var(--primary-white-color);
     border: 1px solid var(--accent-text-color);
@@ -42,15 +41,16 @@
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+.form__comment {
+  margin-bottom: 20px;
+}
 
 .comment {
+  @include font(12px, 1.16, 0.01em, 400);
+
   width: 100%;
   height: 120px;
   resize: none;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding: 12px 16px;
 }
@@ -74,17 +74,14 @@
 }
 
 .form__label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  margin-top: 10px;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
-}
-
-.form__name,
-.form__tel,
-.form__mail {
-  position: relative;
 }
 
 .form__icon {
@@ -93,10 +90,8 @@
   height: 18px;
   top: 50%;
   left: 12px;
-  transform: translateY(-30%);
 
-  .form__input:focus + &,
-  .form__input:hover + & {
+  .form__input:focus + & {
     fill: var(--accent-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -111,6 +106,9 @@
 }
 
 .policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -119,11 +117,11 @@
 }
 
 .policy__icon {
-  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid var(--header-text-color);
   border-radius: 4px;
+  margin-right: 7px;
 
   .checkbox:checked + & {
     background-color: var(--icon-hover-color);
@@ -134,7 +132,9 @@
     background-origin: border-box;
   }
 }
-
+.policy__text {
+  text-align: justify;
+}
 .policy__link {
   cursor: pointer;
   text-decoration: none;
