@@ -1,10 +1,4 @@
-.clients__title {
-  @include font(36px, 1.16, 0.03em, 700);
-  text-align: center;
-  color: var(--header-text-color);
-  margin-bottom: 50px;
-}
-.clients__list {
+.clients {
   display: flex;
   align-items: center;
 }
@@ -25,14 +19,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-white-color);
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -42,10 +33,6 @@
     border: 1px solid var(--icon-hover-color);
     box-sizing: border-box;
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

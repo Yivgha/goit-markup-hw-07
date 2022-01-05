@@ -6,9 +6,9 @@
   --primary-white-color: #ffffff;
   --section-bg-color: #2f303a;
   --footer-address-color: rgba(255, 255, 255, 0.6);
-  --logo-first-part-color: #2196f3;
-  --logo-second-part-color: #000000;
-  --logo-third-part-color: #ffffff;
+  --logo-main-color: #2196f3;
+  --logo-dark-color: #000000;
+  --logo-light-color: #ffffff;
   --team-bg-color: #f5f4fa;
   --portfolio-box-color: #eeeeee;
   --hero-bg-color: #c4c4c4;
@@ -67,6 +67,10 @@ address {
   padding-bottom: 94px;
 }
 
+.section--no-padding {
+  padding-top: 0;
+}
+
 .visually__hidden {
   position: absolute;
   white-space: nowrap;
@@ -118,18 +122,15 @@ address {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   margin-right: 93px;
+  color: var(--logo-main-color);
 }
 
-.logo__first-part {
-  color: var(--logo-first-part-color);
+.logo__dark {
+  color: var(--logo-dark-color);
 }
 
-.logo__second-part {
-  color: var(--logo-second-part-color);
-}
-
-.logo__third-part {
-  color: var(--logo-third-part-color);
+.logo__light {
+  color: var(--logo-light-color);
 }
 
 .nav {
@@ -169,7 +170,7 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current::after {
+.nav-link__current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -310,7 +311,7 @@ address {
   height: 70px;
 }
 
-.preferences__header {
+.preferences__caption {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -326,20 +327,6 @@ address {
   letter-spacing: 0.03em;
   font-weight: 400;
   color: var(--primary-text-color);
-}
-
-.work {
-  padding-top: 0;
-}
-
-.work__header {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-align: center;
-  color: var(--header-text-color);
-  margin-bottom: 50px;
 }
 
 .work__list {
@@ -386,16 +373,6 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__title {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-align: center;
-  color: var(--header-text-color);
-  margin-bottom: 50px;
 }
 
 .team__list {
@@ -475,16 +452,6 @@ address {
   fill: currentColor;
 }
 
-.clients__title {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-align: center;
-  color: var(--header-text-color);
-  margin-bottom: 50px;
-}
-
 .clients__list {
   display: flex;
   align-items: center;
@@ -551,6 +518,7 @@ address {
   letter-spacing: 0.03em;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
+  color: var(--logo-main-color);
 }
 
 .footer__text {

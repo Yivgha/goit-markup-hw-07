@@ -25,7 +25,7 @@
   height: 70px;
 }
 
-.preferences__header {
+.preferences__caption {
   @include font(14px, 1.14, 0.03em, 700);
   text-transform: uppercase;
   color: var(--header-text-color);
