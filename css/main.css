@@ -864,11 +864,10 @@ address {
 }
 
 .form__label {
-  display: block;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  font-weight: 400;
   margin-top: 10px;
   margin-bottom: 4px;
   color: var(--primary-text-color);
@@ -891,19 +890,20 @@ address {
   margin-bottom: 30px;
 }
 
-.checkbox {
-  appearance: none;
-}
-
 .policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
 }
 
 .policy__icon {
