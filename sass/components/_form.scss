@@ -34,7 +34,7 @@
   &:focus {
     color: var(--accent-text-color);
     background-color: var(--primary-white-color);
-    border: 1px solid var(--accent-text-color);
+    border-color: var(--accent-text-color);
   }
 }
 .form__comment {
@@ -62,7 +62,6 @@
   &:focus {
     background: var(--accent-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
   }
 }
 

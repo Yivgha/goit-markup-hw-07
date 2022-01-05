@@ -71,6 +71,16 @@ address {
   padding-top: 0;
 }
 
+.section__title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--header-text-color);
+  margin-bottom: 50px;
+}
+
 .visually__hidden {
   position: absolute;
   white-space: nowrap;
@@ -154,7 +164,6 @@ address {
 
 .nav__item:hover, .nav__item:focus, .nav__item:active {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link {
@@ -167,7 +176,6 @@ address {
 
 .nav__link:hover, .nav__link:focus, .nav__link:active {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link__current::after {
@@ -208,7 +216,6 @@ address {
 
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__mail {
@@ -278,7 +285,6 @@ address {
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--accent-text-color);
   color: var(--title-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .preferences {
@@ -329,7 +335,7 @@ address {
   color: var(--primary-text-color);
 }
 
-.work__list {
+.work {
   display: flex;
   align-items: center;
 }
@@ -365,17 +371,11 @@ address {
   color: var(--title-text-color);
 }
 
-.team {
+.section--other-bg {
   background-color: var(--team-bg-color);
 }
 
-.team__shadow {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__list {
+.team {
   display: flex;
   align-items: center;
 }
@@ -384,6 +384,9 @@ address {
   margin-right: 30px;
   text-align: center;
   background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team__item:last-child {
@@ -395,7 +398,7 @@ address {
   padding-bottom: 30px;
 }
 
-.team__header {
+.team__title {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -443,7 +446,6 @@ address {
 .social__link:hover, .social__link:focus {
   background-color: var(--icon-hover-color);
   color: var(--primary-white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__icon {
@@ -452,7 +454,7 @@ address {
   fill: currentColor;
 }
 
-.clients__list {
+.clients {
   display: flex;
   align-items: center;
 }
@@ -473,21 +475,16 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-white-color);
   color: var(--icon-color);
   border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover, .clients__link:focus {
-  background-color: var(--primary-white-color);
   color: var(--icon-hover-color);
-  border: 1px solid var(--icon-hover-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--icon-hover-color);
 }
 
 .clients__icon {
@@ -561,7 +558,6 @@ address {
 .footer__link:hover, .footer__link:focus {
   background-color: var(--icon-hover-color);
   color: var(--primary-white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__icon {
@@ -598,7 +594,6 @@ address {
 .subscribe__form:hover::placeholder, .subscribe__form:focus::placeholder {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__input {
@@ -623,13 +618,11 @@ address {
   border-color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__input:hover::placeholder, .subscribe__input:focus::placeholder {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__btn {
@@ -641,7 +634,6 @@ address {
 .subscribe__btn:hover, .subscribe__btn:focus {
   color: var(--primary-white-color);
   background-color: var(--icon-hover-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe__icon {
@@ -663,7 +655,6 @@ address {
 
 .address__contact:hover, .address__contact:focus {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__link {
@@ -677,7 +668,6 @@ address {
 
 .address__link:hover, .address__link:focus {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__address {
@@ -691,7 +681,6 @@ address {
 
 .address__address:hover, .address__address:focus {
   color: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -755,7 +744,6 @@ address {
 
 .close__icon:hover, .close__icon:focus {
   fill: var(--accent-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__title {
@@ -787,17 +775,15 @@ address {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  outline: none;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:focus {
   color: var(--accent-text-color);
   background-color: var(--primary-white-color);
-  border: 1px solid var(--accent-text-color);
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--accent-text-color);
 }
 
 .form__comment {
@@ -827,8 +813,6 @@ address {
 .form__btn:hover, .form__btn:focus {
   background: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__label {
@@ -851,7 +835,6 @@ address {
 
 .form__input:focus + .form__icon {
   fill: var(--accent-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__checkbox {
@@ -909,11 +892,11 @@ address {
   justify-content: center;
 }
 
-.filter__list {
+.filter__item {
   margin-right: 8px;
 }
 
-.filter__list:last-child {
+.filter__item:last-child {
   margin-right: 0px;
 }
 
@@ -932,18 +915,10 @@ address {
 }
 
 .filter__btn:hover, .filter__btn:focus {
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  font-weight: 500;
   background-color: var(--accent-text-color);
   color: var(--primary-white-color);
-  text-align: center;
-  cursor: pointer;
   background: var(--icon-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery {
@@ -972,10 +947,9 @@ address {
 .gallery__link:hover, .gallery__link:focus {
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery__header {
+.gallery__title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -984,7 +958,7 @@ address {
   margin-bottom: 4px;
 }
 
-.gallery__header:last-child {
+.gallery__title:last-child {
   margin-bottom: 0px;
 }
 
@@ -1006,7 +980,7 @@ address {
   overflow: hidden;
 }
 
-.thumb__text {
+.gallery__overlay {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1026,10 +1000,9 @@ address {
   text-align: center;
 }
 
-.gallery__link:hover .thumb__text,
-.gallery__link:focus .thumb__text {
+.gallery__link:hover .gallery__overlay,
+.gallery__link:focus .gallery__overlay {
   position: absolute;
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=main.css.map */
